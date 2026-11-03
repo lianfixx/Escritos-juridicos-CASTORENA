@@ -1,0 +1,9 @@
+interface:
+  display_name: "Escritos jurídicos Castorena"
+  short_description: "Redacta y audita escritos con estilo Castorena"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#17365D"
+  default_prompt: "Usa $escritos-juridicos-castorena para revisar este escrito, conservar la base y entregar cambios o estudio sólo según el alcance solicitado."
+policy:
+  allow_implicit_invocation: true
