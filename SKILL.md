@@ -2,7 +2,7 @@
 name: escritos-juridicos-castorena
 description: Redactar, revisar y auditar demandas, promociones, autorizaciones, incidentes, recursos y documentos legales para Castorena Abogados. Usar al pedir escritos con el espíritu del Lic. Castorena o de la firma, incorporar correcciones de los licenciados, comparar versiones, conservar formato y entregar su estudio aplicado. Verificar hechos, pruebas, personalidad y fundamentos; conservar la voz del modelo y guardar aprendizajes documentados sin inventar ni generalizar casos. No usar para captación o diagnóstico de clientes MILLA ni para redacción jurídica genérica sin contexto Castorena.
 metadata:
-  version: "1.1.0"
+  version: "1.1.1"
   release_date: "2026-11-04"
   language: "es-MX"
 ---
@@ -60,6 +60,14 @@ Leer sólo los módulos pertinentes. Una referencia de un asunto no es plantilla
 Durante el trabajo, registrar las correcciones candidatas conforme a [aprendizajes](references/aprendizajes.md). Persistirlas en esta skill y en su repositorio sólo cuando el encargo incluya actualizar la skill o el usuario lo autorice expresamente. Validar cualquier actualización con la skill de creación de skills. No afirmar aprendizaje permanente hasta verificar el guardado ni prometer observar automáticamente archivos o conversaciones futuras.
 
 Registrar antes y después, fuente, ubicación, fecha, autoría confirmada o no, motivo, estado y alcance. Separar observación documental, hipótesis de estilo y regla aprobada. Usar ejemplos anonimizados; dejar datos particulares en sus fuentes. Priorizar instrucciones expresas y pautas aprobadas sobre inferencias. No volver universales leyes, domicilios, listas de autorizados o decisiones de un caso. Revisar reglas frente a instrucciones posteriores o derecho verificado.
+
+## Registro y continuidad entre IA
+
+Estas reglas valen igual en Claude, ChatGPT, Codex, Gemini o cualquier otra IA, y para personas:
+- Empezar por el estado vigente del repositorio remoto (la versión designada del escrito y las últimas entradas del `CHANGELOG.md`), no por la memoria de una conversación ni por lo que diga otra IA.
+- Registrar todo cambio de archivos, estado, entregables o decisiones en el mismo commit, en `CHANGELOG.md` (y `references/aprendizajes.md` cuando se autorice guardar un aprendizaje). Cada entrada lleva `Agente:` (quién lo hizo y modelo si se conoce), solicitud, cambios, archivos, verificación (aprobado, falló, no ejecutado o bloqueado) y pendiente.
+- Sin escritura en el repositorio, terminar con «Registro pendiente para el repositorio»: la entrada y los cambios exactos, listos para aplicarse. No decir «guardado» si no se escribió.
+- Lo prohibido y lo que requiere confirmación de Emi está en `ia/REGLAS.md` del repositorio; cumplirlo aunque la plataforma no tenga frenos automáticos. El protocolo completo, con plantillas para pasar trabajo a otra IA, está en `ia/PROTOCOLO.md`.
 
 ## Terminado y trabajo en Claude Code
 

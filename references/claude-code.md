@@ -14,6 +14,8 @@ Configurados en `.claude/` de este repositorio:
 
 Sólo actúan en Claude Code dentro de este repositorio; no en claude.ai ni en otras IA. No sustituyen las reglas de la skill: un freno que no se dispara no autoriza enviar, presentar ni editar originales.
 
+Las mismas reglas valen fuera de Claude Code: están en `ia/REGLAS.md` (generadas de `ia/politica.json`). Con terminal, `sh ia/instalar.sh` las activa como hooks de git para cualquier IA o persona, y GitHub revisa cada push con `registro-ia.yml`. En chat sin frenos (claude.ai, ChatGPT, Gemini), la IA las cumple por sí misma y entrega el registro pendiente. Además, todo commit sin entrada de registro con `Agente:` queda bloqueado.
+
 ## Plan y entrevista
 
 Para escritos largos o auditorías completas, empezar en modo plan (Shift+Tab): leer, ubicar fuentes y proponer el plan sin tocar archivos. Pedir la entrevista sólo si falta un dato que cambie la solución y no está en los archivos. En encargos limitados (puntuación, ortografía, un fragmento), ir directo al trabajo.
