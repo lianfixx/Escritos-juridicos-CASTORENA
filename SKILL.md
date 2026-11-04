@@ -2,8 +2,8 @@
 name: escritos-juridicos-castorena
 description: Redactar, revisar y auditar demandas, promociones, autorizaciones, incidentes, recursos y documentos legales para Castorena Abogados. Usar al pedir escritos con el espíritu del Lic. Castorena o de la firma, incorporar correcciones de los licenciados, comparar versiones, conservar formato y entregar su estudio aplicado. Verificar hechos, pruebas, personalidad y fundamentos; conservar la voz del modelo y guardar aprendizajes documentados sin inventar ni generalizar casos. No usar para captación o diagnóstico de clientes MILLA ni para redacción jurídica genérica sin contexto Castorena.
 metadata:
-  version: "1.0.0"
-  release_date: "2026-11-03"
+  version: "1.1.0"
+  release_date: "2026-11-04"
   language: "es-MX"
 ---
 
@@ -60,3 +60,18 @@ Leer sólo los módulos pertinentes. Una referencia de un asunto no es plantilla
 Durante el trabajo, registrar las correcciones candidatas conforme a [aprendizajes](references/aprendizajes.md). Persistirlas en esta skill y en su repositorio sólo cuando el encargo incluya actualizar la skill o el usuario lo autorice expresamente. Validar cualquier actualización con la skill de creación de skills. No afirmar aprendizaje permanente hasta verificar el guardado ni prometer observar automáticamente archivos o conversaciones futuras.
 
 Registrar antes y después, fuente, ubicación, fecha, autoría confirmada o no, motivo, estado y alcance. Separar observación documental, hipótesis de estilo y regla aprobada. Usar ejemplos anonimizados; dejar datos particulares en sus fuentes. Priorizar instrucciones expresas y pautas aprobadas sobre inferencias. No volver universales leyes, domicilios, listas de autorizados o decisiones de un caso. Revisar reglas frente a instrucciones posteriores o derecho verificado.
+
+## Terminado y trabajo en Claude Code
+
+Criterio de terminado, dentro del alcance pedido:
+- existe el escrito editable y, si corresponde, el estudio aplicado;
+- se revisaron todas las páginas renderizadas, incluidos cortes de citas, petitorios y firma;
+- cada hallazgo quedó clasificado y localizado, con evidencia, efecto y corrección mínima;
+- si hubo cambios rojos, se comprobó que al aceptarlos resulta el texto final previsto;
+- el estado se declara como «revisión terminada» o «listo para presentar», sin confundirlos.
+
+Entrevista inicial: sólo si falta materia, órgano, etapa, acto, objetivo, firmante, calidad procesal o plazo, el dato cambia la solución y no está en los archivos. Una pregunta a la vez; en encargos limitados, no ampliar el alcance.
+
+Máxima profundidad (`ultrathink` en Claude Code): procedencia, plazo y cómputo, personalidad, fundamentos y versión normativa aplicable por fecha del acto.
+
+Para frenos activos, reparto en paralelo, `/goal` y navegador, leer [Claude Code](references/claude-code.md).
